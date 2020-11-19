@@ -693,7 +693,7 @@
 
 // Enable this feature if all enabled endstop pins are interrupt-capable.
 // This will remove the need to poll the interrupt pins, saving many CPU cycles.
-//#define ENDSTOP_INTERRUPTS_FEATURE
+#define ENDSTOP_INTERRUPTS_FEATURE
 
 /**
  * Endstop Noise Threshold
@@ -960,11 +960,11 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { -20, 10, 0 }  //{ 10, 10, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { -43, -18, 0 }  //{ 10, 10, 0 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
-#define MIN_PROBE_EDGE 10
+#define MIN_PROBE_EDGE 20   //10
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 8000
